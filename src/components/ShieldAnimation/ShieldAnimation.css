@@ -1,0 +1,12 @@
+.animation-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  circle,
+  rect,
+  line {
+    stroke-width: 12px;
+    fill: transparent;
+  }  

@@ -1,0 +1,73 @@
+.first_home_component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8rem;
+    z-index: 1;
+}
+.home_top_container{
+    margin-top: 3.4rem;
+}
+.first_name{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #DB8B16;
+}
+.last_name{
+    color: #3F76F8;
+}
+.home_bottom_container{
+    display: flex;
+    flex-direction: column;
+    gap: 3.1rem;
+}
+.home_text_container{
+    display: flex;
+}
+.home_text_left{
+    flex-basis: 85%;
+    line-height: 5.2rem;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+.home_text_right{
+    flex-basis: 15%;
+}
+.typing_text{
+    color: #3F76F8;
+    /* color: #DB8B16; */
+    font-family: 'Urbanist', 'sans-serif';
+}
+@media only screen and (max-width: 1200px){
+    .home_top_container{
+        display: none;
+    }
+    .first_home_component{
+        margin-top: 10rem;
+    }
+    .home_text_container{
+        flex-direction: column;
+    }
+    .home_text_left{
+        font-size: 3rem;
+        line-height: 4rem;
+        flex-basis: 90%;
+    }
+    .home_text_right{
+        flex-basis: 10%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .home_text_left{
+        font-size: 3.5rem;
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .home_text_left{
+        font-size: 2.1rem;
+        line-height: normal;
+    }
+}
