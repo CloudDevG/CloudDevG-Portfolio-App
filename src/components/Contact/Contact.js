@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import submitForm from './submitForm'
+import React, { useState } from 'react'
+import useForm from './useForm'
 import validateInfo from './validateInfo'
 import { motion } from 'framer-motion'
 
@@ -11,7 +11,7 @@ function Contact() {
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
 
-  const { handleSubmit, errors } = submitForm(
+  const { handleSubmit, errors } = useForm(
     validateInfo,
     name,
     email,

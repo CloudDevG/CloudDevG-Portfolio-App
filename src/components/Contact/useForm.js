@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const submitForm = (validate, name, email, subject, message) => {
+const useForm = (validate, name, email, subject, message) => {
   const [errors, setErrors] = useState({})
 
   const handleSubmit = (e) => {
@@ -23,4 +23,4 @@ const submitForm = (validate, name, email, subject, message) => {
   return { handleSubmit, errors }
 }
 
-export default submitForm
+export default useForm
