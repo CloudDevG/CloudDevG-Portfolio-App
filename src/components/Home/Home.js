@@ -1,14 +1,13 @@
-import React from 'react'
-import EmailButton from '../EmailButton/EmailButton'
-import { motion } from 'framer-motion'
-import { FadeIn, FadeInExtreme } from '../../theme/AnimationVariants'
-import Typewriter from 'typewriter-effect'
-
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FadeIn, FadeInExtreme } from '../../theme/AnimationVariants';
+import Typewriter from 'typewriter-effect';
+import EmailButton from '../EmailButton/EmailButton';
 import './Home.css'
 
 function Home() {
   const typeWriteOptions = {
-    strings: ['CloudDevG', 'Full-Stack Dev.', 'Cloud Engineer', 'Java Dev.', 'React Dev.', 'GCP A.C.E.', 'Professional Nerd'],
+    strings: ['CloudDevG', 'Full-Stack Dev.', 'Cloud Engineer', 'Java Dev.', 'React Dev.', 'GCP Certified A.C.E.', 'Spring Dev', 'Professional Nerd'],
     autoStart: true,
     loop: true,
   }

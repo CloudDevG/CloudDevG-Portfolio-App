@@ -44,7 +44,7 @@
     left: -100%;
     height: 100%;
     width: 100%;
-    background-color: #DB8B16;
+    background-color: #c1922d;
   }
   .gmailbuttoncontainer:hover::before {
     left: 0;

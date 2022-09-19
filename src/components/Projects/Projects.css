@@ -17,12 +17,12 @@
     border-radius: 23px;
     font-family: 'Urbanist', sans-serif;    
     font-size: 1rem;
-    border: 1px solid #DB8B16;
+    border: 1px solid #c1922d;
     padding: 0.7rem 2rem;
 }
 .work_button:hover{
     transition: all 0.4s;
-    background-color: #DB8B16;
+    background-color: #c1922d;
     color: black;
 }
 .project_container{

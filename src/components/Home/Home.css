@@ -11,7 +11,8 @@
 .first_name{
     font-size: 3.5rem;
     font-weight: 600;
-    color: #DB8B16;
+    /* color: #dbae3b; */
+    color: #c1922d;
 }
 .last_name{
     color: #3F76F8;
@@ -35,7 +36,7 @@
 }
 .typing_text{
     color: #3F76F8;
-    /* color: #DB8B16; */
+    /* color: #c1922d; */
     font-family: 'Urbanist', 'sans-serif';
 }
 @media only screen and (max-width: 1200px){

@@ -16,7 +16,7 @@ const EmailButton = () => {
         <CgMail className="mail_icon" />
       </div>
       <div className="mail_container">
-        <span className="mail">gordon@elysianarts.org</span>
+        <span className="mail">gordon@clouddevg.org</span>
       </div>
     </motion.div>
   )
