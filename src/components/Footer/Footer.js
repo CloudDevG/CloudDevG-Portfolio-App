@@ -1,22 +1,20 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import './Footer.css'
-import { SiGmail } from 'react-icons/si'
-import { FaDiscord } from 'react-icons/fa'
-import { FaLinkedinIn } from 'react-icons/fa'
-import { FaWhatsapp } from 'react-icons/fa'
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import './Footer.css';
+import { SiGmail, SiGooglecloud, SiGithub } from 'react-icons/si';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 function Footer() {
-  const [focused, setFocused] = useState(null)
-  const [focused2, setFocused2] = useState(null)
+  const [focused, setFocused] = useState(null);
+  // const [focused2, setFocused2] = useState(null);
   let tags = [
     { tag: SiGmail, text: 'Gmail' },
-    { tag: FaDiscord, text: 'Discord' },
-  ]
+    { tag: SiGithub, text: 'GitHub' },
+  ];
   let tags2 = [
     { tag: FaLinkedinIn, text: 'LinkedIn' },
-    { tag: FaWhatsapp, text: 'Whatsapp' },
-  ]
+    { tag: SiGooglecloud, text: 'GCP Directory' },
+  ];
   return (
     <main className="footer">
       <section>

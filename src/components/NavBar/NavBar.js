@@ -1,20 +1,17 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import {
   FadeinSide,
   ListItem,
   NavbarOpen,
   HamburgerTopLine,
   HamburgerBottomLine,
-} from '../../theme/AnimationVariants'
-import HomeIcon from '@material-ui/icons/Home'
-import CodeIcon from '@material-ui/icons/Code'
-import ContactMailIcon from '@material-ui/icons/ContactMail'
-import NoteIcon from '@material-ui/icons/Note'
+} from '../../theme/AnimationVariants';
+import { MdHome, MdCode, MdNote, MdContactMail } from 'react-icons/md';
 
-import ShieldLogo from '../../assets/imgs/shield-of-artorius.png'
-import './NavBar.css'
+import ShieldLogo from '../../assets/imgs/shield-of-artorius.png';
+import './NavBar.css';
 
 function NavBar() {
   const [visible, setVisible] = useState('-120vw')
@@ -86,7 +83,7 @@ function NavBar() {
       >
         <div className="links_outer">
           <motion.div variants={ListItem(visible)}>
-            <span><HomeIcon/></span>
+            <span><MdHome/></span>
             <Link
               className="link"
               to="/"
@@ -102,7 +99,7 @@ function NavBar() {
           </motion.div>
 
           <motion.div variants={ListItem(visible)}>
-            <span><NoteIcon /></span>
+            <span><MdNote /></span>
             <Link
               className="link"
               to="/about"
@@ -120,7 +117,7 @@ function NavBar() {
 
         <div className="links_outer">
           <motion.div variants={ListItem(visible)}>
-            <span><CodeIcon /></span>
+            <span><MdCode /></span>
             <Link
               className="link"
               to="/projects"
@@ -136,7 +133,7 @@ function NavBar() {
           </motion.div>
 
           <motion.div variants={ListItem(visible)}>
-            <span><ContactMailIcon /></span>
+            <span><MdContactMail /></span>
             <Link
               className="link"
               to="/contact"
@@ -155,4 +152,4 @@ function NavBar() {
     </motion.div>
   )
 }
-export default NavBar
+export default NavBar;

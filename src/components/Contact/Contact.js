@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
-import useForm from './useForm'
-import validateInfo from './validateInfo'
-import { motion } from 'framer-motion'
-
-import './Contact.css'
+import React, { useState } from 'react';
+import useForm from './useForm';
+import validateInfo from './validateInfo';
+import { motion } from 'framer-motion';
+import { MdOutlineContacts } from 'react-icons/md';
+import './Contact.css';
 
 function Contact() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [subject, setSubject] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
   const { handleSubmit, errors } = useForm(
     validateInfo,
@@ -17,12 +17,11 @@ function Contact() {
     email,
     subject,
     message,
-  )
-
+  );
   const animateParent = {
     hidden: {},
     visible: { transition: { delay: 2, staggerChildren: 0.7 } },
-  }
+  };
   const animateChild = {
     hidden: { opacity: 0, y: 40 },
     visible: {
@@ -30,7 +29,7 @@ function Contact() {
       y: 0,
       transition: { type: 'easeOut', duration: 0.5 },
     },
-  }
+  };
 
   return (
     <motion.div
@@ -40,12 +39,12 @@ function Contact() {
       className="contact"
     >
       <motion.div variants={animateChild} className="contact_heading">
-        I'll love to hear your suggestions
+        I'd love to connect <MdOutlineContacts />
       </motion.div>
       <motion.div variants={animateChild} className="input_container">
         <div className="input_form">
           <div className="input_form_text_container">
-            <span className="input_form_text">What's your name?</span>
+            <span className="input_form_text">Name</span>
             {errors.name && (
               <span className="input_form_invalid_text">{errors.name}</span>
             )}
@@ -60,7 +59,7 @@ function Contact() {
 
         <div className="input_form">
           <div className="input_form_text_container">
-            <span className="input_form_text">What's your email?</span>
+            <span className="input_form_text">Email</span>
             {errors.email && (
               <span className="input_form_invalid_text">{errors.email}</span>
             )}
@@ -75,7 +74,7 @@ function Contact() {
 
         <div className="input_form">
           <div className="input_form_text_container">
-            <span className="input_form_text">What's the subject?</span>
+            <span className="input_form_text">Subject</span>
             {errors.subject && (
               <span className="input_form_invalid_text">{errors.subject}</span>
             )}
@@ -90,7 +89,7 @@ function Contact() {
 
         <div className="input_form">
           <div className="input_form_text_container">
-            <span className="input_form_text">What's the message?</span>
+            <span className="input_form_text">Message</span>
             {errors.message && (
               <span className="input_form_invalid_text">{errors.message}</span>
             )}
@@ -110,4 +109,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Contact;

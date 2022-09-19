@@ -1,7 +1,7 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
 
-import './Backdrop.css'
+import './Backdrop.css';
 
 const Backdrop = ({ children, onClick }) => {
   return (
@@ -17,4 +17,4 @@ const Backdrop = ({ children, onClick }) => {
   )
 }
 
-export default Backdrop
+export default Backdrop;

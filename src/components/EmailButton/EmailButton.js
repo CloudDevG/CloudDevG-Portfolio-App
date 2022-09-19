@@ -1,8 +1,8 @@
-import React from 'react'
-import './EmailButton.css'
-import { CgMail } from 'react-icons/cg'
-import { motion } from 'framer-motion'
-import { FadeIn } from '../../theme/AnimationVariants'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../theme/AnimationVariants';
+import { CgMail } from 'react-icons/cg';
+import './EmailButton.css';
 
 const EmailButton = () => {
   return (

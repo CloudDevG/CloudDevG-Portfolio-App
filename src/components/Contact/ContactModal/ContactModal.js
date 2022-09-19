@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
-import './ContactModal.css'
-import { Link } from 'react-router-dom'
-import Aos from 'aos'
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Aos from 'aos';
+import './ContactModal.css';
 
 function ContactModal() {
   useEffect(() => {
@@ -20,4 +20,4 @@ function ContactModal() {
   )
 }
 
-export default ContactModal
+export default ContactModal;

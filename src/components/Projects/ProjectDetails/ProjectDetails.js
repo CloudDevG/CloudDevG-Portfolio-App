@@ -11,7 +11,7 @@ function ProjectDetails({ modalClose, handleClose, project_name }) {
 
   let detailedProjectData = ''
 
-  detailedProjectData = project_detail.filter((e) => e.name == project_name)
+  detailedProjectData = project_detail.filter((e) => e.name === project_name)
   detailedProjectData = detailedProjectData[0]
 
   let image = ''
@@ -22,9 +22,9 @@ function ProjectDetails({ modalClose, handleClose, project_name }) {
   let mobile_image = detailedProjectData.mobile_image
   let description = detailedProjectData.description
 
-  if (imageView == 'desktop') {
+  if (imageView === 'desktop') {
     image = desktop_image
-  } else if (imageView == 'tablet') {
+  } else if (imageView === 'tablet') {
     image = tablet_image
   } else {
     image = mobile_image
@@ -83,11 +83,17 @@ function ProjectDetails({ modalClose, handleClose, project_name }) {
             <a
               href={website_url}
               target="_blank"
+              rel="noreferrer"
               className="preview left_buttons"
             >
               Preview Site
             </a>
-            <a href={code_url} target="_blank" className="code left_buttons">
+            <a 
+              href={code_url} 
+              target="_blank" 
+              rel="noreferrer"
+              className="code left_buttons"
+            >
               View Code
             </a>
           </div>
