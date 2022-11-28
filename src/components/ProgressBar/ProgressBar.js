@@ -1,4 +1,4 @@
-import './ProgressBar.css'
+import './ProgressBar.css';
 
 function ProgressBar({height}){
     return (
@@ -7,4 +7,4 @@ function ProgressBar({height}){
         </div>
     )
 }
-export default ProgressBar
+export default ProgressBar;

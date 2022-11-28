@@ -1,5 +1,5 @@
-import './ShieldAnimation.css'
-import { motion } from 'framer-motion'
+import './ShieldAnimation.css';
+import { motion } from 'framer-motion';
 
 export default function App() {
   const drawPath = {

@@ -6,7 +6,6 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 function Footer() {
   const [focused, setFocused] = useState(null);
-  // const [focused2, setFocused2] = useState(null);
   let tags = [
     { tag: SiGmail, text: 'Gmail' },
     { tag: SiGithub, text: 'GitHub' },
@@ -83,4 +82,4 @@ function BackgroundFocused() {
   )
 }
 
-export default Footer
+export default Footer;

@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import { IoClose } from 'react-icons/io5'
-import Backdrop from '../../Backdrop/Backdrop'
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { IoClose } from 'react-icons/io5';
+import Backdrop from '../../Backdrop/Backdrop';
 
-import { project_detail } from '../../../data/projectData'
-import './ProjectDetails.css'
+import { project_detail } from '../../../data/projectData';
+import './ProjectDetails.css';
 
 function ProjectDetails({ modalClose, handleClose, project_name }) {
   const [imageView, setImageView] = useState('desktop')
@@ -102,4 +102,4 @@ function ProjectDetails({ modalClose, handleClose, project_name }) {
     </Backdrop>
   )
 }
-export default ProjectDetails
+export default ProjectDetails;

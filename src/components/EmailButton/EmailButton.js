@@ -21,4 +21,4 @@ const EmailButton = () => {
     </motion.div>
   )
 }
-export default EmailButton
+export default EmailButton;

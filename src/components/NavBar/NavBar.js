@@ -9,7 +9,6 @@ import {
   HamburgerBottomLine,
 } from '../../theme/AnimationVariants';
 import { MdHome, MdCode, MdNote, MdContactMail } from 'react-icons/md';
-
 import ShieldLogo from '../../assets/imgs/shield-of-artorius.png';
 import './NavBar.css';
 

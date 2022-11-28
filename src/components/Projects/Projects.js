@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import Aos from 'aos'
-import { AnimatePresence } from 'framer-motion'
-import { buttons_data, project_data } from '../../data/projectData'
-import ProjectDetails from './ProjectDetails/ProjectDetails'
-import './Projects.css'
+import React, { useState, useEffect } from 'react';
+import Aos from 'aos';
+import { AnimatePresence } from 'framer-motion';
+import { buttons_data, project_data } from '../../data/projectData';
+import ProjectDetails from './ProjectDetails/ProjectDetails';
+import './Projects.css';
 
 function Projects() {
   useEffect(() => {
@@ -81,4 +81,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Projects;

@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react'
-import "@fontsource/space-mono"
-import "@fontsource/urbanist"
-import "@fontsource/spline-sans-mono"
-import "@fontsource/courier-prime"
-import NavBar from './components/NavBar/NavBar'
-import Home from './components/Home/Home'
-import Footer from './components/Footer/Footer'
-import ContactModal from './components/Contact/ContactModal/ContactModal'
-import Contact from './components/Contact/Contact'
-import Projects from './components/Projects/Projects'
-import ProgressBar from './components/ProgressBar/ProgressBar'
-import ShieldAnimation from './components/ShieldAnimation/ShieldAnimation.js'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import 'aos/dist/aos.css'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import "@fontsource/space-mono";
+import "@fontsource/urbanist";
+import "@fontsource/spline-sans-mono";
+import "@fontsource/courier-prime";
+import NavBar from './components/NavBar/NavBar';
+import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
+import ContactModal from './components/Contact/ContactModal/ContactModal';
+import Contact from './components/Contact/Contact';
+import Projects from './components/Projects/Projects';
+import ProgressBar from './components/ProgressBar/ProgressBar';
+import ShieldAnimation from './components/ShieldAnimation/ShieldAnimation.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'aos/dist/aos.css';
+import './App.css';
 
 function App() {
   const [scrollTop, setScrollTop] = useState(0)
@@ -63,4 +63,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

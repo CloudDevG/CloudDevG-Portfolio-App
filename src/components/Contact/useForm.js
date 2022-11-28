@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
 const useForm = (validate, name, email, subject, message) => {
   const [errors, setErrors] = useState({})
@@ -23,4 +23,4 @@ const useForm = (validate, name, email, subject, message) => {
   return { handleSubmit, errors }
 }
 
-export default useForm
+export default useForm;
