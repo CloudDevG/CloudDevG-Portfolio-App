@@ -8,6 +8,10 @@
     box-sizing: border-box;
     padding: 4rem 0rem;
   }
+  .footer-link {
+    color: white;
+    text-decoration: none;
+  }
   .footer section {
     display: flex;
     max-width: 90vw;

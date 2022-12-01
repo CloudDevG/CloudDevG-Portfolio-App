@@ -1,4 +1,4 @@
-.first_home_component{
+.home_component{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@
     font-size: 3.5rem;
     font-weight: 600;
     /* color: #dbae3b; */
-    color: #c1922d;
+    color: #c49514;
 }
 .last_name{
     color: #3F76F8;

@@ -1,6 +1,6 @@
 .home_contact{
     background-color: #3F76F8;
-    border: 5px solid #c1922d;
+    border: 5px solid #c49514;
     border-radius: 2%;
     display: flex;
     flex-direction: column;
@@ -29,13 +29,13 @@
 }
 .home_contact_button:hover{
     transition: all 0.4s;
-    border: 1px solid #c1922d;
+    border: 1px solid #c49514;
     background-color: transparent;
 }
 .home_contact_button:not(:hover) { 
     transition: all 0.4s;
     border: 1px solid #303033;
-    background-color: #c1922d;
+    background-color: #c49514;
 } 
 @media only screen and (max-width: 1200px){
     .home_contact_text{

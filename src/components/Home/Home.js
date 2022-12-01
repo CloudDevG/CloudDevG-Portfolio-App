@@ -12,7 +12,7 @@ function Home() {
     loop: true,
   }
   return (
-    <div className="first_home_component">
+    <div className="home_component">
       <motion.div
         className="home_top_container"
         variants={FadeIn('down')}

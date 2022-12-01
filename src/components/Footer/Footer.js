@@ -1,53 +1,58 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import './Footer.css';
 import { SiGmail, SiGooglecloud, SiGithub } from 'react-icons/si';
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import './Footer.css';
 
 function Footer() {
   const [focused, setFocused] = useState(null);
-  let tags = [
-    { tag: SiGmail, text: 'Gmail' },
-    { tag: SiGithub, text: 'GitHub' },
+  let socialTags = [
+    { tag: SiGithub, text: 'GitHub', link: 'https://github.com/CloudDevG'},
+    { tag: FaLinkedinIn, text: 'LinkedIn', link: 'https://www.linkedin.com/in/clouddevg/' },
   ];
-  let tags2 = [
-    { tag: FaLinkedinIn, text: 'LinkedIn' },
-    { tag: SiGooglecloud, text: 'GCP Directory' },
+  let googleTags = [
+    
+    { tag: SiGmail, text: 'Gmail', link: 'mailto:gordon@clouddevg.io' },
+    { tag: SiGooglecloud, text: 'GCP Directory', link: 'https://bit.ly/3VEVuat' },
   ];
   return (
     <main className="footer">
       <section>
-        {tags.map((tag) => {
+        {socialTags.map((tag) => {
           return (
-            <div
-              onMouseLeave={() => setFocused(null)}
-              onFocus={() => setFocused(tag.text)}
-              onMouseEnter={() => setFocused(tag.text)}
-              className="section"
-            >
-              <tag.tag className="icons"></tag.tag>
-              <span>{tag.text}</span>
-              {focused === tag.text ? <BackgroundFocused /> : null}
-            </div>
+            <a href={tag.link} target="_blank" rel='noreferrer' className='footer-link'>
+              <div
+                onMouseLeave={() => setFocused(null)}
+                onFocus={() => setFocused(tag.text)}
+                onMouseEnter={() => setFocused(tag.text)}
+                className="section"
+              >
+                <tag.tag className="icons"></tag.tag>
+                <span>{tag.text}</span>
+                {focused === tag.text ? <BackgroundFocused /> : null}
+              </div>
+            </a>
           )
         })}
       </section>
       <div className="center">
-        <span>Gordon Allen</span>
+        <span>CloudDevG</span>
       </div>
       <section>
-        {tags2.map((tag) => {
+        {googleTags.map((tag) => {
           return (
-            <div
-              onMouseLeave={() => setFocused(null)}
-              onFocus={() => setFocused(tag.text)}
-              onMouseEnter={() => setFocused(tag.text)}
-              className="section"
-            >
-              <tag.tag className="icons"></tag.tag>
-              <span>{tag.text}</span>
-              {focused === tag.text ? <BackgroundFocused /> : null}
-            </div>
+            <a href={tag.link} target="_blank" rel='noreferrer' className='footer-link'>
+              <div
+                onMouseLeave={() => setFocused(null)}
+                onFocus={() => setFocused(tag.text)}
+                onMouseEnter={() => setFocused(tag.text)}
+                className="section"
+              >
+                <tag.tag className="icons"></tag.tag>
+                <span>{tag.text}</span>
+                {focused === tag.text ? <BackgroundFocused /> : null}
+              </div>
+            </a>
           )
         })}
       </section>
