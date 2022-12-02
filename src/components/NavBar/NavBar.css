@@ -26,7 +26,7 @@ body{
     flex-direction: row-reverse;
 }
 .navbar_first_section{
-    padding: 3rem 0rem;
+    padding: 2rem 0rem;
     display: flex;
     flex-basis: 75%;
     flex-direction: column;
@@ -35,10 +35,10 @@ body{
 }
 
 .shield_logo img{
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border: 3px solid #c49514;
-    border-radius: 75px;
+    border-radius: 50px;
     padding: 5px;
 }
 .shield_logo img:hover{
@@ -46,8 +46,15 @@ body{
     width: 4.5rem;
     height: 4.5rem;
     border: 2.5px solid #c49514;
-    /* border: 2px solid rgb(218, 216, 216); */
     border-radius: 35%;
+}
+.shield_logo img:not(:hover){
+    transition: all 0.4s;
+    width: 55px;
+    height: 55px;
+    border: 3px solid #c49514;
+    border-radius: 75px;
+    padding: 5px;
 }
 
 .hamburger_outer{
@@ -58,7 +65,7 @@ body{
 }
 .hamburger_lines{
     width: 50px;
-    border-top: 2px solid #c49514;
+    border-top: 4px solid #c49514;
     transition: all 0.2s;
 }
 .hamburger_outer:hover > #line1{
@@ -67,6 +74,9 @@ body{
 .hamburger_outer:hover > #line2{
     transform: translate(-10px);
 }
+/* .hamburger_outer:focus > #line3{
+    transform: translate(-100px);
+} */
 .navbar_second_section{
     border-top: 6px solid #c49514;
     flex-basis: 25%;
@@ -90,7 +100,7 @@ body{
     background-color: #c49514; */
 }
 .work_with_me{
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: absolute;
     width: 200px;
     text-align: center;
@@ -131,10 +141,17 @@ body{
 .link{
     text-decoration: none;
 }
+
+.navbar-icon {
+    color: #303030;
+    height: 40px;
+    width: 40px;
+}
 .navbar_dropdown li:hover a{
-    color: rgb(73, 70, 70);
+    color: #303030;
     transition: all 0.3s;
 }
+
 .navbar_dropdown div span, .navbar_dropdown div li a{
     text-decoration: none;
     color: white;
@@ -187,7 +204,7 @@ body{
 @media only screen and (max-width: 700px){
     .navbar_dropdown{
         flex-direction: column;
-        border: 6px solid #c49514;
+        border-right: 6px solid #c49514;
         border-left: transparent;
         gap: 2.5rem;
         margin: 0 0;

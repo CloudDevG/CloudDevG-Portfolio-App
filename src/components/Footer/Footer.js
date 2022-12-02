@@ -6,15 +6,16 @@ import './Footer.css';
 
 function Footer() {
   const [focused, setFocused] = useState(null);
+
   let socialTags = [
     { tag: SiGithub, text: 'GitHub', link: 'https://github.com/CloudDevG'},
     { tag: FaLinkedinIn, text: 'LinkedIn', link: 'https://www.linkedin.com/in/clouddevg/' },
   ];
   let googleTags = [
-    
     { tag: SiGmail, text: 'Gmail', link: 'mailto:gordon@clouddevg.io' },
     { tag: SiGooglecloud, text: 'GCP Directory', link: 'https://bit.ly/3VEVuat' },
   ];
+
   return (
     <main className="footer">
       <section>
@@ -36,7 +37,7 @@ function Footer() {
         })}
       </section>
       <div className="center">
-        <span>CloudDevG</span>
+        <span>Cloud<span className="footer-title-text">DevG</span></span>
       </div>
       <section>
         {googleTags.map((tag) => {

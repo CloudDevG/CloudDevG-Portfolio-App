@@ -6,6 +6,7 @@ import {
   ListItem,
   NavbarOpen,
   HamburgerTopLine,
+  HamburgerCenterLine,
   HamburgerBottomLine,
 } from '../../theme/AnimationVariants';
 import { MdHome, MdCode, MdNote, MdContactMail } from 'react-icons/md';
@@ -55,10 +56,17 @@ function NavBar() {
             ></motion.div>
             <motion.div
               className="hamburger_lines"
-              variants={HamburgerBottomLine(hamburgerState)}
+              variants={HamburgerCenterLine(hamburgerState)}
               id="line2"
               initial="hidden"
               animate="visible"
+            ></motion.div>
+            <motion.div
+              className="hamburger_lines"
+              variants={HamburgerBottomLine(hamburgerState)}
+              id="line3"
+              initial="visible"
+              animate="hidden"
             ></motion.div>
           </div>
         </div>
@@ -82,7 +90,7 @@ function NavBar() {
       >
         <div className="links_outer">
           <motion.div variants={ListItem(visible)}>
-            <span><MdHome/></span>
+            <span><MdHome className="navbar-icon"/></span>
             <Link
               className="link"
               to="/"
@@ -98,7 +106,7 @@ function NavBar() {
           </motion.div>
 
           <motion.div variants={ListItem(visible)}>
-            <span><MdNote /></span>
+            <span><MdNote className="navbar-icon"/></span>
             <Link
               className="link"
               to="/about"
@@ -116,7 +124,7 @@ function NavBar() {
 
         <div className="links_outer">
           <motion.div variants={ListItem(visible)}>
-            <span><MdCode /></span>
+            <span><MdCode className="navbar-icon"/></span>
             <Link
               className="link"
               to="/projects"
@@ -132,7 +140,7 @@ function NavBar() {
           </motion.div>
 
           <motion.div variants={ListItem(visible)}>
-            <span><MdContactMail /></span>
+            <span><MdContactMail className="navbar-icon"/></span>
             <Link
               className="link"
               to="/contact"

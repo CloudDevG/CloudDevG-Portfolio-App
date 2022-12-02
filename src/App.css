@@ -30,7 +30,7 @@ input {
 .container {
   position: absolute;
   box-sizing: border-box;
-  margin-left: 200px;
+  margin-left: 140px;
   width: calc(100vw - 219px);
   min-height: 100vh;
 }

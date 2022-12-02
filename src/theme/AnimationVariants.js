@@ -95,7 +95,7 @@ export const HamburgerTopLine = (state) => {
         }
     }
 }
-export const HamburgerBottomLine = (state) => {
+export const HamburgerCenterLine = (state) => {
     return {
         hidden: {
             y: state ? ["-4px", "-4px", "-4px"] : ["0px", "0px", "0px"],
@@ -106,5 +106,16 @@ export const HamburgerBottomLine = (state) => {
             rotate: state ? [0, 0] : [0, 0, 0, -45],
             transition: { duration: 0.3}
         }
+    }
+}
+export const HamburgerBottomLine = (state) => {
+    return {
+        visible: {
+            x: state ? '0vw' : '120vw'
+        },
+        hidden: {
+            x: state ? '0vw' : '-120vw',
+            transition: { duration: 0.1}
+        },
     }
 }

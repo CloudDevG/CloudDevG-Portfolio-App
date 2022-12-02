@@ -11,7 +11,7 @@ function ContactModal() {
   return (
     <div className="home_contact">
       <div className="home_contact_text" data-aos="fade-up">
-        I'd love to make something for you or your company 
+        I'd love to build something with you and your team
       </div>
       <Link to="/contact">
         <button className="home_contact_button">Hire Me</button>

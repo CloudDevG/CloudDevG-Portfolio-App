@@ -39,7 +39,7 @@ function Contact() {
       className="contact"
     >
       <motion.div variants={animateChild} className="contact_heading">
-        I'd love to connect <MdOutlineContacts />
+        <div className="first-contact-title">Let's <span className="second-contact-title">Connect</span></div>
       </motion.div>
       <motion.div variants={animateChild} className="input_container">
         <div className="input_form">
