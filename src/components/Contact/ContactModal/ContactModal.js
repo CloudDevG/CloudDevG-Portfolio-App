@@ -14,7 +14,7 @@ function ContactModal() {
         I'd love to build something with you and your team
       </div>
       <Link to="/contact">
-        <button className="home_contact_button">Hire Me</button>
+        <button className="home_contact_button" data-aos="fade-up">Hire Me</button>
       </Link>
     </div>
   )

@@ -52,10 +52,10 @@
   }
   .contact_send {
     font-family: 'Urbanist', sans-serif;
-    width: 13rem;
+    width: 12rem;
     font-size: 1.1rem;
     letter-spacing: 1px;
-    padding: 1.3rem 0rem;
+    padding: 1rem .25rem;
     color: white;
     font-weight: 600;
     border: none;
