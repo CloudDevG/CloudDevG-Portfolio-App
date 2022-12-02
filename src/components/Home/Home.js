@@ -7,7 +7,7 @@ import './Home.css';
 
 function Home() {
   const typeWriteOptions = {
-    strings: ['CloudDevG', 'Full-Stack Dev.', 'Cloud Engineer', 'Java Dev.', 'React Dev.', 'Spring Dev.', 'GCP Certified A.C.E.', 'Professional Nerd'],
+    strings: ['CloudDevG', 'Full-Stack Dev.', 'GCP Certified A.C.E.', 'Java Dev.', 'React Dev.', 'Spring Dev.', 'Cloud Engineer','Professional Nerd'],
     autoStart: true,
     loop: true,
   }

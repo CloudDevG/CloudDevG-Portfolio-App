@@ -98,11 +98,11 @@ export const HamburgerTopLine = (state) => {
 export const HamburgerCenterLine = (state) => {
     return {
         hidden: {
-            y: state ? ["-4px", "-4px", "-4px"] : ["0px", "0px", "0px"],
+            y: state ? ["-7px", "-7px", "-7px"] : ["0px", "0px", "0px"],
             rotate: state ? [0, 0, 0, -45] : [0, 0, 0, 0]
         },
         visible: {
-            y: state ? ["-4px", "-4px", "-4px", "-4px", "0px"] : ["-4px", "-4px", "-4px"],
+            y: state ? ["-7px", "-7px", "-7px", "-7px", "0px"] : ["-7px", "-7px", "-7px"],
             rotate: state ? [0, 0] : [0, 0, 0, -45],
             transition: { duration: 0.3}
         }
@@ -111,10 +111,10 @@ export const HamburgerCenterLine = (state) => {
 export const HamburgerBottomLine = (state) => {
     return {
         visible: {
-            x: state ? '0vw' : '120vw'
+            x: state ? '0vw' : '25vw'
         },
         hidden: {
-            x: state ? '0vw' : '-120vw',
+            x: state ? '0vw' : '-25vw',
             transition: { duration: 0.1}
         },
     }
