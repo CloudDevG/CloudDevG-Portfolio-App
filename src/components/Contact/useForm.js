@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 
 const useForm = (validate, name, email, subject, message) => {
   const [errors, setErrors] = useState({})
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     let values = {
       name: name,
       email: email,

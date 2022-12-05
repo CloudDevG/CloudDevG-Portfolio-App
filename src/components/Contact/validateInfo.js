@@ -1,19 +1,20 @@
 export default function validateInfo(values) {
-    let errors = {}
+    let errs = {}
     if (!values.name) {
-      errors.name = 'Name is required'
+      errs.name = 'Name is required'
     }
     if (!values.email) {
-      errors.email = 'Email is required'
+      errs.email = 'Email is required'
     } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-      errors.email = 'Email address is invalid'
+      errs.email = 'Email address is invalid'
     }
     if (!values.subject) {
-      errors.subject = 'Subject is required'
+      errs.subject = 'Subject is required'
     }
     if (!values.message) {
-      errors.message = 'Message is required'
+      errs.message = 'Message is required'
     }
-    return errors
+    console.log(errs);
+    return errs
   }
   

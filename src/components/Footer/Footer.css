@@ -42,7 +42,7 @@
   .section::before {
     content: '';
     position: absolute;
-    height: 80%;
+    height: 85%;
     top: 50%;
     right: 0;
     left:0;
@@ -58,6 +58,24 @@
     color: #3F76F8;
   }
   @media only screen and (max-width: 1550px) {
+    .center {
+      font-size: 1.5rem;
+      padding: 2rem 4rem;
+    }
+    .footer-link {
+      font-size: .8rem;
+    }
+    .icons {
+      transform: scale(1.5);
+    }
+  }
+  @media only screen and (max-width: 1500px) {
+    .center {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media only screen and (max-width: 1250px) {
     .center {
       display: none;
     }
