@@ -79,6 +79,9 @@
   .description {
     font-size: 0.9rem;
   }
+  .heading {
+    color: #c49514;
+  }
   @media only screen and (max-width: 1000px) {
     .detail_project_container {
       grid-template-columns: 1fr;

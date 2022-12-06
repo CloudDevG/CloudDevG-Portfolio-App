@@ -1,9 +1,9 @@
 .work{
-    margin-top: 3.4rem;
+    /* margin-top: .5rem; */
     margin-bottom: 7rem;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2.5rem;
     overflow: hidden;
 }
 .button_container{
@@ -70,6 +70,15 @@
 }
 .technologies_used:hover{
     background-color: rgb(235, 233, 233);
+}
+.first_title{
+    font-size: 4rem;
+    font-weight: 600;
+    /* color: #dbae3b; */
+    color: #c49514;
+}
+.second_title{
+    color: #3F76F8;
 }
 @media only screen and (max-width: 1500px){
     .project_description{

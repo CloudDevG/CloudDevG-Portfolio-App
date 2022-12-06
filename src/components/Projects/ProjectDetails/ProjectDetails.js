@@ -7,20 +7,20 @@ import { project_detail } from '../../../data/projectData';
 import './ProjectDetails.css';
 
 function ProjectDetails({ modalClose, handleClose, project_name }) {
-  const [imageView, setImageView] = useState('desktop')
+  const [imageView, setImageView] = useState('desktop');
 
-  let detailedProjectData = ''
+  let detailedProjectData = '';
 
-  detailedProjectData = project_detail.filter((e) => e.name === project_name)
-  detailedProjectData = detailedProjectData[0]
+  detailedProjectData = project_detail.filter((e) => e.name === project_name);
+  detailedProjectData = detailedProjectData[0];
 
-  let image = ''
-  let website_url = detailedProjectData.website_url
-  let code_url = detailedProjectData.code_url
-  let desktop_image = detailedProjectData.desktop_image
-  let tablet_image = detailedProjectData.tablet_image
-  let mobile_image = detailedProjectData.mobile_image
-  let description = detailedProjectData.description
+  let image = '';
+  let website_url = detailedProjectData.website_url;
+  let code_url = detailedProjectData.code_url;
+  let desktop_image = detailedProjectData.desktop_image;
+  let tablet_image = detailedProjectData.tablet_image;
+  let mobile_image = detailedProjectData.mobile_image;
+  let description = detailedProjectData.description;
 
   if (imageView === 'desktop') {
     image = desktop_image
@@ -28,7 +28,7 @@ function ProjectDetails({ modalClose, handleClose, project_name }) {
     image = tablet_image
   } else {
     image = mobile_image
-  }
+  };
 
   const dropIn = {
     hidden: {
@@ -46,7 +46,8 @@ function ProjectDetails({ modalClose, handleClose, project_name }) {
     exit: {
       y: '100vh',
     },
-  }
+  };
+  
   return (
     <Backdrop onClick={handleClose}>
       <motion.div
