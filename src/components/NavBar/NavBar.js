@@ -100,7 +100,7 @@ function NavBar() {
               }}
             >
               <li>
-                <a>Home</a>
+                Home
               </li>
             </Link>
           </motion.div>
@@ -116,7 +116,7 @@ function NavBar() {
               }}
             >
               <li>
-                <a>About</a>
+                About
               </li>
             </Link>
           </motion.div>
@@ -134,7 +134,7 @@ function NavBar() {
               }}
             >
               <li>
-                <a>Projects</a>
+                Projects
               </li>
             </Link>
           </motion.div>
@@ -150,7 +150,7 @@ function NavBar() {
               }}
             >
               <li>
-                <a>Contact</a>
+                Contact
               </li>
             </Link>
           </motion.div>

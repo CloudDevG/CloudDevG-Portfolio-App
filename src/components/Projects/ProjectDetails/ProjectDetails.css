@@ -20,13 +20,23 @@
     position: absolute;
     transform: scale(1.7);
   }
+  .close-button:hover {
+    transition: all 0.4s;
+    background-color: #c49514;
+    color: black;
+  }
+  .close-button:not(:hover) {
+    transition: all 0.4s;
+    background-color: transparent;
+    color: white;
+  }
   .hero_image {
     width: 100%;
     max-width: 40rem;
     border-radius: 0.4rem;
   }
   .left_buttons {
-    background-color: transparent;
+    background-color: #3F76F8;
     color: white;
     border-radius: 99999px;
     font-family: 'Urbanist', sans-serif;
@@ -38,9 +48,15 @@
   }
   .left_buttons:hover {
     transition: all 0.4s;
-    background-color: white;
+    background-color: #c49514;
     color: black;
   }
+  .left_buttons:not(:hover) { 
+    transition: all 0.4s;
+    /* border: 1px solid #303033; */
+    background-color: #3F76F8;
+    color: white;
+} 
   .left-button-container,
   .right-button-container {
     width: 100%;
@@ -58,7 +74,7 @@
     margin: 0px 0px;
   }
   .preview {
-    background-color: #ed2c49;
+    background-color: #3F76F8;
   }
   .description {
     font-size: 0.9rem;

@@ -70,17 +70,27 @@
     }
   }
   @media only screen and (max-width: 1500px) {
-    .center {
+    .center > span {
       font-size: 1.25rem;
     }
   }
 
-  @media only screen and (max-width: 1250px) {
+  @media only screen and (max-width: 1400px) {
+    .center > span {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .center > span {
+      font-size: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 1325px) {
     .center {
       display: none;
     }
-  }
-  @media only screen and (max-width: 1080px) {
     .footer {
       flex-direction: row;
       justify-content: center;

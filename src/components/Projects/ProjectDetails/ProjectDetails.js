@@ -65,6 +65,7 @@ function ProjectDetails({ modalClose, handleClose, project_name }) {
             {['desktop', 'tablet', 'mobile'].map((item) => {
               return (
                 <button
+                  key={item.id}
                   className="left_buttons"
                   onClick={() => {
                     setImageView(item)

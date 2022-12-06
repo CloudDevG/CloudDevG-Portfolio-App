@@ -6,9 +6,7 @@ import Collapse from '@material-ui/core/Collapse';
 import CloseIcon from '@material-ui/icons/Close';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import emailjs from '@emailjs/browser';
-import validateInfo from './validateInfo';
 import { motion } from 'framer-motion';
-
 import './Contact.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -24,8 +22,6 @@ const useStyles = makeStyles((theme) => ({
 
 function Contact() {
   const classes = useStyles();
-  const [openSuccess, setOpenSuccess] = useState(false);
-  const [openError, setOpenError] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -33,6 +29,8 @@ function Contact() {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
   const [errorMsg, setErrorMsg] = useState('');
+  const [openSuccess, setOpenSuccess] = useState(false);
+  const [openError, setOpenError] = useState(false);
 
   useEffect(() => {
     if (Object.keys(errors).length === 0) {
@@ -162,7 +160,6 @@ function Contact() {
             value={email}
           ></input>
         </div>
-
         <div className="input_form">
           <div className="input_form_text_container">
             <span className="input_form_text">Subject</span>
@@ -177,7 +174,6 @@ function Contact() {
             value={subject}
           ></input>
         </div>
-
         <div className="input_form">
           <div className="input_form_text_container">
             <span className="input_form_text">Message</span>
@@ -189,6 +185,7 @@ function Contact() {
             onChange={(e) => {
               setMessage(e.target.value)
             }}
+            value={message}
           ></input>
         </div>
         <button className="contact_send" onClick={sendEmail}>
@@ -200,8 +197,6 @@ function Contact() {
             </>
         }
         </button>
-
-        
         <div className={classes.root}>
         {openSuccess ? 
           <Collapse in={openSuccess}>

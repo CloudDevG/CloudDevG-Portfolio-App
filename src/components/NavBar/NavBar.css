@@ -20,7 +20,6 @@ body{
     border-left: 1px solid #303030;
     z-index: 2;
 }
-
 .navbar_first_section, .navbar_second_section{
     display: flex;
     flex-direction: row-reverse;
@@ -33,7 +32,6 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
 .shield_logo img{
     width: 50px;
     height: 50px;
@@ -56,7 +54,6 @@ body{
     border-radius: 75px;
     padding: 5px;
 }
-
 .hamburger_outer{
     margin-bottom: 9rem;
     display: flex;
@@ -74,9 +71,6 @@ body{
 .hamburger_outer:hover > #line2{
     transform: translate(-10px);
 }
-/* .hamburger_outer:focus > #line3{
-    transform: translate(-100px);
-} */
 .navbar_second_section{
     border-top: 6px solid #c49514;
     flex-basis: 25%;
@@ -111,7 +105,6 @@ body{
     text-decoration: none;
 
 }
-
 .navbar_dropdown{
     position: fixed;
     margin: 0 0;
@@ -141,18 +134,18 @@ body{
 .link{
     text-decoration: none;
 }
-
 .navbar-icon {
     color: #303030;
     height: 40px;
     width: 40px;
+    margin-bottom: -10px;
 }
-.navbar_dropdown li:hover a{
+.navbar_dropdown li:hover{
     color: #303030;
     transition: all 0.3s;
 }
 
-.navbar_dropdown div span, .navbar_dropdown div li a{
+.navbar_dropdown div span, .navbar_dropdown div li{
     text-decoration: none;
     color: white;
     font-size: 4rem;
@@ -216,7 +209,7 @@ body{
         gap: 2.5rem;
         width: 15rem;
     }
-    .navbar_dropdown div li a{
+    .navbar_dropdown div li{
         font-size: 2rem;
     }
     .navbar_dropdown div span{

@@ -8,12 +8,12 @@ function Footer() {
   const [focused, setFocused] = useState(null);
 
   let socialTags = [
-    { tag: SiGithub, text: 'GitHub', link: 'https://github.com/CloudDevG'},
-    { tag: FaLinkedinIn, text: 'LinkedIn', link: 'https://www.linkedin.com/in/clouddevg/' },
+    { id: 1, tag: SiGithub, text: 'GitHub', link: 'https://github.com/CloudDevG'},
+    { id: 2, tag: FaLinkedinIn, text: 'LinkedIn', link: 'https://www.linkedin.com/in/clouddevg/' },
   ];
   let googleTags = [
-    { tag: SiGmail, text: 'Gmail', link: 'mailto:gordon@clouddevg.io' },
-    { tag: SiGooglecloud, text: 'GCP Directory', link: 'https://bit.ly/3VEVuat' },
+    { id: 1, tag: SiGmail, text: 'Gmail', link: 'mailto:gordon@clouddevg.io' },
+    { id: 2, tag: SiGooglecloud, text: 'GCP Directory', link: 'https://bit.ly/3VEVuat' },
   ];
 
   return (
@@ -21,7 +21,7 @@ function Footer() {
       <section>
         {socialTags.map((tag) => {
           return (
-            <a href={tag.link} target="_blank" rel='noreferrer' className='footer-link'>
+            <a key={tag.id} href={tag.link} target="_blank" rel='noreferrer' className='footer-link'>
               <div
                 onMouseLeave={() => setFocused(null)}
                 onFocus={() => setFocused(tag.text)}
@@ -42,7 +42,7 @@ function Footer() {
       <section>
         {googleTags.map((tag) => {
           return (
-            <a href={tag.link} target="_blank" rel='noreferrer' className='footer-link'>
+            <a key={tag.id}href={tag.link} target="_blank" rel='noreferrer' className='footer-link'>
               <div
                 onMouseLeave={() => setFocused(null)}
                 onFocus={() => setFocused(tag.text)}

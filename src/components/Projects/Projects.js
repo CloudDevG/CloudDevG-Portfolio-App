@@ -23,7 +23,7 @@ function Projects() {
       return
     }
     const newProjects = project_data.filter(
-      (element) => element.category === e.target.innerHTML,
+      (element) => element.category === e.target.technology,
     )
     setProjects(newProjects)
   }
@@ -33,8 +33,8 @@ function Projects() {
       <div className="button_container">
         {buttons_data.map((element) => {
           return (
-            <button onClick={(e) => show(e)} className="work_button">
-              {element.innerHTML}
+            <button key={element.id} onClick={(e) => show(e)} className="work_button">
+              {element.logo}{" "}{element.technology}
             </button>
           )
         })}
@@ -44,6 +44,7 @@ function Projects() {
         {projects.map((element) => {
           return (
             <div
+              key={element.id}
               className="project"
               data-aos="fade-up"
               onClick={(e) => {
