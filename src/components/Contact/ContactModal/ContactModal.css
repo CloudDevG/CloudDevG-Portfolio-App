@@ -12,7 +12,6 @@
 }
 .home_contact_text{
     color: white;
-    /* width: 900px; */
     font-size: 2.5rem;
     line-height: 58px;
     text-align: center;
@@ -21,9 +20,9 @@
     font-family: 'Urbanist', sans-serif;    
     width: 10rem;
     font-size: 1.25rem;
-    padding: 1rem 1rem;
-    color: #212121;
-    border: 1px solid white;
+    padding: .75rem .75rem;
+    color: #303033;
+    border: 1px solid #303033;
     background-color: transparent;
     border-radius: 8%;
 }
@@ -52,7 +51,6 @@
     .home_contact{
         padding: 20px;
         min-height: 20vh;
-        /* gap: 2rem; */
     }
     .home_contact_text{
         width: 90%;

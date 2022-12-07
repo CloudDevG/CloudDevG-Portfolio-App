@@ -1,14 +1,12 @@
 .project_top_container {
-    margin-top: 1.8rem;
+    margin-top: 1.5rem;
 }
 .work{
-    /* margin-top: .5rem; */
     margin-top: .5rem;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    overflow: hidden;
 }
 .button_container{
     display: flex;
@@ -54,11 +52,11 @@
     width: 100%;
     height: 100%;
     border-radius: 2%;
-    transition: all 0.2s;
+    transition: all 0.3s;
     border: 2px solid #c49514;
 }
 .project_image:hover{
-    transform: scale(1.01);
+    transform: scale(1.04);
 }
 .project_description{
     margin: 2rem 0rem;
@@ -75,7 +73,7 @@
     background-color: #3F76F8;
     color: white;
     margin: 0rem 0.3rem;
-    padding: 0.4rem 0.7rem;
+    padding: 0.4rem 0.75rem;
     border-radius: 4px;
     transition: all 0.4s;
     min-width: max-content;

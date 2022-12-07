@@ -87,12 +87,12 @@ body{
     transition: all 0.4s;
     color: black;
 }
-
 .navbar_second_section:not(:hover) {
     transition: all 0.4s;
-    /* border-top: 10px solid #3F76F8;
-    background-color: #c49514; */
+    border-top: 6px solid #c49514;
+    background-color: #3F76F8;
 }
+
 .work_with_me{
     font-size: 1.2rem;
     position: absolute;

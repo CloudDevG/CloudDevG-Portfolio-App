@@ -5,7 +5,7 @@ import './ContactModal.css';
 
 function ContactModal() {
   useEffect(() => {
-    Aos.init({ duration: 1000, offset: 50 })
+    Aos.init({ duration: 1000, offset: 25 })
   }, [])
 
   return (
@@ -13,8 +13,8 @@ function ContactModal() {
       <div className="home_contact_text" data-aos="fade-up">
         I'd love to build something with you and your team
       </div>
-      <Link to="/contact">
-        <button className="home_contact_button" data-aos="fade-up">Hire Me</button>
+      <Link to="/contact" data-aos="fade-up">
+        <button className="home_contact_button" >Hire Me</button>
       </Link>
     </div>
   )

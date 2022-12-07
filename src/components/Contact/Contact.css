@@ -68,6 +68,11 @@
     transition: all 0.4s;
     color: rgb(21, 21, 21);
   }
+  .contact_send:not(:hover) {
+    background-color: #3F76F8;
+    transition: all 0.4s;
+    color: white;
+  }
   @media only screen and (max-width: 1200px) {
     .contact {
       margin-top: 7.5rem;
