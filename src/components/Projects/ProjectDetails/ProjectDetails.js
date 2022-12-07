@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
@@ -96,7 +96,7 @@ function ProjectDetails({ modalClose, handleClose, project_name }) {
               slidesPerView={1}
               spaceBetween={5}
               autoplay={{
-                  delay: 5000,
+                  delay: 3250,
                   disableOnInteraction: true,
               }}
               loop={true}

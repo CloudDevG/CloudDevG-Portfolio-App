@@ -1,0 +1,112 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.6rem;
+    /* margin-bottom: 4rem; */
+    gap: 1rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 2rem;
+  }
+  .first-about-title{
+    /* font-size: 3.5rem;
+    font-weight: 600; */
+    /* color: #dbae3b; */
+    color: #c49514;
+}
+.second-about-title{
+    color: #3F76F8;
+}
+.about_link{
+  text-decoration: none;
+  color:#c49514;
+}
+.about_link:hover{
+  transition: all 0.4s;
+  color: #3F76F8;
+}
+.about_link:not(:hover) { 
+  transition: all 0.4s;
+  color: #c49514;
+} 
+  .about_heading {
+    line-height: 5.2rem;
+    font-size: 4rem;
+    width: 70%;
+  }
+  .input_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 60%;
+  }
+  .input_form_text_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .input_form_text,
+  .input_form_invalid_text {
+    font-size: 1rem;
+    color: #3F76F8;
+  }
+  .input_form_invalid_text {
+    color: rgb(220, 53, 69);
+  }
+  input {
+    width: 100%;
+    background-color: #e9e8e8;
+    font-size: 1.125rem;
+    box-sizing: border-box;
+    color: rgb(21, 21, 21);
+    padding: 1.2rem 1rem;
+    border: none;
+    outline: none;
+  }
+  .about_send {
+    font-family: 'Urbanist', sans-serif;
+    width: 12rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 1rem .25rem;
+    color: white;
+    font-weight: 600;
+    border: none;
+    margin-top: 2rem;
+    background-color: #3F76F8;
+    border-radius: 8%;
+  }
+  .about_send:hover {
+    background-color: #c49514;
+    transition: all 0.4s;
+    color: rgb(21, 21, 21);
+  }
+  @media only screen and (max-width: 1200px) {
+    .about {
+      margin-top: 7.5rem;
+    }
+    .input_form {
+      width: 700px;
+    }
+    .about_heading {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    .input_form {
+      width: 100%;
+    }
+    .about_heading {
+      font-size: 3.5rem;
+      line-height: normal;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .about_heading {
+      font-size: 3.25rem;
+    }
+    .input_form_text,
+    .input_form_invalid_text {
+      font-size: 0.8rem;
+    }
+  }
+  

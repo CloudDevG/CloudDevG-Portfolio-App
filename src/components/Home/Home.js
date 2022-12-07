@@ -31,7 +31,7 @@ function Home() {
             animate="visible"
           >
             Hello There 🤖
-            <br /> I'm Gordon, <br />
+            <br /> I'm <span className='home_text_name'>Gordon</span>, <br />
             <span className="typing_text">
               <Typewriter options={typeWriteOptions} />
             </span>

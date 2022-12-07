@@ -83,7 +83,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
 
   }
   .right_container {
@@ -150,7 +150,13 @@
   }
 }
 @media only screen and (max-width: 800px){
-  
+  .tech_icon_container {
+    width: 80%;
+    /* height: 50px; */
+    display: flex;
+    align-items: flex-start;
+    gap: .25rem;
+  }
 }
 @media only screen and (max-width: 600px){
   .detail_project_container {

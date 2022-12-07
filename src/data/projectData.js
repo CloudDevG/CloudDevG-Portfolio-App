@@ -73,15 +73,15 @@ export const project_detail = [
     {
         id: 1,
         name: 'Intergalactic Travel Agency',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus perspiciatis ullam minima quo impedit totam provident, dolorum sapiente quae suscipit in, reprehenderit tenetur dolorem asperiores numquam hic.',
-        code_url: 'https://github.com/KrishnaDhingra/e-commerce-website',
+        description: 'A fictional RESTful web-service that allows "Users" to sign up for an account and complete a variety of requests to look up + book Flights on lengendary Spacecraft aboard with their favorite sci-fi heros as their pilots through the RESTful web service. "Pilot" users are able to add Spacecraft to their fleet and specify route/"Flights" for "Users" to book passage on',
+        code_url: 'https://github.com/CloudDevG/Intergalactic-Travel-Agency',
         screenshots: [itaDashHome, itaLogin, itaSignup, itaDashPilot, itaDashSpacecraft, itaDashFlights, itaDashProfile]
         
     },
     {
         id: 2,
         name: 'RobinRaps.com',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus perspiciatis ullam minima quo impedit totam provident, dolorum sapiente quae suscipit in, reprehenderit tenetur dolorem asperiores numquam hic.',
+        description: 'An aritst portfolio S.P.A. application featuring a home component landing video loop via Vimeo, a built-in YouTube music-video player, music carousel via Swiper, functional contact form via Email.js, and more.',
         website_url: 'https://robinraps.com/',
         screenshots: [robinRapsHomeOne, robinRapsHomeTwo, robinRapsNavBar, robinRapsAbout, robinRapsMusic, robinRapsVideos, robinRapsYouTubePlayer, robinRapsScheduleContact]
         
@@ -89,9 +89,9 @@ export const project_detail = [
     {
         id: 3,
         name: 'CloudDevG.io',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus perspiciatis ullam minima quo impedit totam provident, dolorum sapiente quae suscipit in, reprehenderit tenetur dolorem asperiores numquam hic.',
-        website_url: 'http://e-commerce-website-five.vercel.app/',
-        code_url: 'https://github.com/KrishnaDhingra/e-commerce-website',
+        description: 'My personal portfolio S.P.A. application that you are currently visiting featuring a built-in Framer-Motion, functional contact form via Email.js, and more.',
+        website_url: 'http://clouddevg.io',
+        code_url: 'https://github.com/CloudDevG/CloudDevG-Portfolio-App',
         screenshots: [robinRapsHomeOne, robinRapsHomeTwo, robinRapsAbout, robinRapsMusic, robinRapsVideos, robinRapsYouTubePlayer, robinRapsScheduleContact]
     },
 ]
