@@ -20,17 +20,6 @@ function Projects() {
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
 
-  // let show = (e) => {
-  //   if (e.target.technology.toLowerCase() === 'all') {
-  //     setProjects(project_data);
-  //     return
-  //   }
-  //   const newProjects = project_data.filter(
-  //     (element) => element.category === e.target.technology,
-  //   )
-  //   setProjects(newProjects);
-  // };
-
   return (
     <div className="work" onClick={close}>
       <motion.div

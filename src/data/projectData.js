@@ -1,3 +1,9 @@
+import cloudDevGHome from '../assets/imgs/clouddevg/clouddevg-home.png';
+import cloudDevGNavBar from '../assets/imgs/clouddevg/clouddevg-navbar.png';
+import cloudDevGProjects from '../assets/imgs/clouddevg/clouddevg-projects.png';
+import cloudDevGProjectDetail from '../assets/imgs/clouddevg/clouddevg-projectdetail.png';
+import cloudDevGContact from '../assets/imgs/clouddevg/clouddevg-contact.png';
+
 import itaDashHome from '../assets/imgs/ita/ita-dashboard-home.png';
 import itaLogin from '../assets/imgs/ita/ita-login.png';
 import itaSignup from '../assets/imgs/ita/ita-signup.png';
@@ -63,7 +69,7 @@ export let project_data = [
         id: 3,
         show: true,
         category: 'Spring Framework',
-        image: 'https://www.frontendmentor.io/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdz209s6jk%2Fimage%2Fupload%2Fv1597957737%2FChallenges%2Fbflu1myynk7j8quyezyc.jpg&w=828&q=75',
+        image: cloudDevGHome,
         name: 'CloudDevG.io',
         technologies_used: ['REACT', 'REACT-ROUTER', 'MATERIAL-UI', 'FRAMER-MOTION', 'R-W-D', 'S-P-A', 'EMAIL-JS', 'SWIPER', 'NGINX', 'DOCKER', 'GCP']
     },
@@ -73,7 +79,7 @@ export const project_detail = [
     {
         id: 1,
         name: 'Intergalactic Travel Agency',
-        description: 'A fictional RESTful web-service that allows "Users" to sign up for an account and complete a variety of requests to look up + book Flights on lengendary Spacecraft aboard with their favorite sci-fi heros as their pilots through the RESTful web service. "Pilot" users are able to add Spacecraft to their fleet and specify route/"Flights" for "Users" to book passage on',
+        description: 'A fictional RESTful web-service that allows "Users" to sign up for an account and complete a variety of requests to look up + book Flights on lengendary Spacecraft aboard with their favorite sci-fi heros as their pilots through the RESTful web service. "Pilot" users are able to add Spacecraft to their fleet and specify route/"Flights" for "Users" to book interstellar passage on.',
         code_url: 'https://github.com/CloudDevG/Intergalactic-Travel-Agency',
         screenshots: [itaDashHome, itaLogin, itaSignup, itaDashPilot, itaDashSpacecraft, itaDashFlights, itaDashProfile]
         
@@ -92,6 +98,6 @@ export const project_detail = [
         description: 'My personal portfolio S.P.A. application that you are currently visiting featuring a built-in Framer-Motion, functional contact form via Email.js, and more.',
         website_url: 'http://clouddevg.io',
         code_url: 'https://github.com/CloudDevG/CloudDevG-Portfolio-App',
-        screenshots: [robinRapsHomeOne, robinRapsHomeTwo, robinRapsAbout, robinRapsMusic, robinRapsVideos, robinRapsYouTubePlayer, robinRapsScheduleContact]
+        screenshots: [cloudDevGHome, cloudDevGNavBar, cloudDevGProjects, cloudDevGProjectDetail, cloudDevGContact]
     },
 ]
