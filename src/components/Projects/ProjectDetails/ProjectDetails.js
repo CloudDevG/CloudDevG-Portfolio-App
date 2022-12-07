@@ -1,34 +1,28 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import { IoClose } from 'react-icons/io5';
 import Backdrop from '../../Backdrop/Backdrop';
+import GetTechnologyIcon from '../../../util/GetTechnologyIcon';
 
-import { project_detail } from '../../../data/projectData';
+import { project_data, project_detail } from '../../../data/projectData';
 import './ProjectDetails.css';
 
 function ProjectDetails({ modalClose, handleClose, project_name }) {
-  const [imageView, setImageView] = useState('desktop');
 
   let detailedProjectData = '';
-
   detailedProjectData = project_detail.filter((e) => e.name === project_name);
   detailedProjectData = detailedProjectData[0];
 
-  let image = '';
+  let techProjectData = '';
+  techProjectData = project_data.filter((e) => e.name === project_name);
+  techProjectData = techProjectData[0];
+
   let website_url = detailedProjectData.website_url;
   let code_url = detailedProjectData.code_url;
-  let desktop_image = detailedProjectData.desktop_image;
-  let tablet_image = detailedProjectData.tablet_image;
-  let mobile_image = detailedProjectData.mobile_image;
+  let name = detailedProjectData.name;
   let description = detailedProjectData.description;
-
-  if (imageView === 'desktop') {
-    image = desktop_image
-  } else if (imageView === 'tablet') {
-    image = tablet_image
-  } else {
-    image = mobile_image
-  };
 
   const dropIn = {
     hidden: {
@@ -59,45 +53,68 @@ function ProjectDetails({ modalClose, handleClose, project_name }) {
         onClick={(e) => e.stopPropagation()}
       >
         <IoClose className="close-button" onClick={handleClose} />
-
-        <div className="left_container">
-          <img className="hero_image" src={image} alt="" />
-          <div className="left-button-container">
-            {['desktop', 'tablet', 'mobile'].map((item) => {
-              return (
-                <button
-                  key={item.id}
-                  className="left_buttons"
-                  onClick={() => {
-                    setImageView(item)
-                  }}
-                >
-                  {item}
-                </button>
-              )
-            })}
-          </div>
-        </div>
         <div className="right_container">
-          <h1 className="heading">Description</h1>
+          <h1 className="heading">{detailedProjectData.name}</h1>
+          <div className="tech_icon_container">
+          {techProjectData.technologies_used.map((tech) => {
+            return <div>{GetTechnologyIcon(tech)}</div>
+          })}
+          </div>
           <p className="description">{description}</p>
           <div className="right-button-container">
-            <a
+
+            {detailedProjectData.website_url ?
+              <a
               href={website_url}
               target="_blank"
               rel="noreferrer"
               className="preview left_buttons"
-            >
-              Preview Site
-            </a>
+              >
+              Live Site
+             </a>
+            :
+             <></>
+            }
+          {detailedProjectData.code_url ?
             <a 
               href={code_url} 
               target="_blank" 
               rel="noreferrer"
               className="code left_buttons"
             >
-              View Code
+              GitHub Repo
             </a>
+            :
+            <></>
+            }
+          </div>
+        </div>
+        <div className="left_container">
+          <div className="slider">
+              <Swiper
+              id="swiper-color"
+              slidesPerView={1}
+              spaceBetween={5}
+              autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: true,
+              }}
+              loop={true}
+              pagination={{
+                  clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+              >
+              {detailedProjectData.screenshots.map((screenshot, i) => {
+                return (
+                  <SwiperSlide key={i}>
+                    <img className="hero_image" src={screenshot} alt={name} />
+                  </SwiperSlide>
+                )
+              })}
+              </Swiper>
           </div>
         </div>
       </motion.div>

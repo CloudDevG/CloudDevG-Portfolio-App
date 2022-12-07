@@ -1,80 +1,99 @@
 .detail_project_container {
-    display: grid;
-    width: min(1200px, 95%);
-    padding-block: 4rem;
-    padding-inline: clamp(2rem, 2.5vw, 4rem);
+    /* display: grid; */
+    width: min(1200px, 85%);
+    padding-block: 2.5rem;
+    padding-inline: clamp(4rem, 2.5vw, 4rem);
     box-sizing: border-box;
     height: auto;
-    max-height: 80vh;
+    max-height: 90vh;
     overflow: auto;
     background-color: rgb(20, 20, 20);
-    border-radius: 0.2rem;
+    border-radius: 8%;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     z-index: 3;
   }
   .close-button {
-    color: white;
-    margin: 1rem 1rem;
+    color: #3F76F8;
+    margin: .75rem 2.5rem;
     right: 0;
     position: absolute;
-    transform: scale(1.7);
+    transform: scale(2.5);
   }
   .close-button:hover {
     transition: all 0.4s;
     background-color: #c49514;
     color: black;
+    border-radius: 50%;
   }
   .close-button:not(:hover) {
     transition: all 0.4s;
     background-color: transparent;
-    color: white;
+    color: #3F76F8;
+    border-radius: 0%;
   }
   .hero_image {
     width: 100%;
-    max-width: 40rem;
+    max-width: 800px;
+    max-height: 600px;
+    /* max-height: fit-content; */
     border-radius: 0.4rem;
   }
   .left_buttons {
-    background-color: #3F76F8;
+    background-color: #303033;
     color: white;
     border-radius: 99999px;
     font-family: 'Urbanist', sans-serif;
     font-size: 1rem;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
+    border: 1px solid #3F76F8;
     text-decoration: none;
     align-self: flex-start;
-    padding: 0.4rem 2.3rem;
+    padding: .4rem 2rem;
   }
   .left_buttons:hover {
     transition: all 0.4s;
     background-color: #c49514;
+    border: 1px solid #c49514;
     color: black;
   }
   .left_buttons:not(:hover) { 
     transition: all 0.4s;
-    /* border: 1px solid #303033; */
-    background-color: #3F76F8;
+    border: 1px solid #3F76F8;
+    background-color: transparent;
     color: white;
 } 
+.tech_icon_container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+}
   .left-button-container,
   .right-button-container {
     width: 100%;
     display: flex;
-    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
   }
   .left_container,
   .right_container {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: .5rem;
+
+  }
+  .right_container {
+    margin-bottom: 2rem;
   }
   .right_container > * {
     margin: 0px 0px;
   }
   .preview {
-    background-color: #3F76F8;
+    background-color: transparent;
   }
   .description {
     font-size: 0.9rem;
@@ -82,9 +101,73 @@
   .heading {
     color: #c49514;
   }
-  @media only screen and (max-width: 1000px) {
-    .detail_project_container {
-      grid-template-columns: 1fr;
-    }
+  .slider {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+}
+#swiper-color .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  font-size: 10px;
+  opacity: 1;
+  background: #3F76F8;
+}
+#swiper-color .swiper-pagination-bullet-active {
+  background: #c49514;
+}
+
+@media only screen and (max-width: 1200px){
+  
+}
+@media only screen and (max-width: 1000px) {
+  .detail_project_container {
+    grid-template-columns: 1fr;
   }
+}
+@media only screen and (max-width: 800px){
+  
+}
+@media only screen and (max-width: 600px){
+  .detail_project_container {
+    padding-inline: clamp(2rem, 2.5vw, 2rem);
+  }
+  .description {
+    font-size: 0.75rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .left_buttons {
+    font-size: 1rem;
+    /* border: 1px solid #333; */
+    padding: .5rem;
+  }
+}
+
+
   
