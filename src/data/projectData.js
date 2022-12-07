@@ -79,7 +79,7 @@ export const project_detail = [
     {
         id: 1,
         name: 'Intergalactic Travel Agency',
-        description: 'A fictional RESTful web-service that allows "Users" to sign up for an account and complete a variety of requests to look up + book Flights on lengendary Spacecraft aboard with their favorite sci-fi heros as their pilots through the RESTful web service. "Pilot" users are able to add Spacecraft to their fleet and specify route/"Flights" for "Users" to book interstellar passage on.',
+        description: 'A fictional RESTful web-service that allows "Users" to sign up for an account and complete a variety of requests to look up + book Flights on legendary Spacecraft aboard with their favorite sci-fi heroes as their pilots through the RESTful web service. "Pilot" users are able to add Spacecraft to their fleet and specify route/"Flights" for "Users" to book interstellar passage on.',
         code_url: 'https://github.com/CloudDevG/Intergalactic-Travel-Agency',
         screenshots: [itaDashHome, itaPostmanExample, itaLogin, itaSignup, itaDashPilot, itaDashSpacecraft, itaDashFlights, itaDashProfile]
         

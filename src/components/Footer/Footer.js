@@ -13,7 +13,7 @@ function Footer() {
   ];
   let googleTags = [
     { id: 1, tag: SiGmail, text: 'Gmail', link: 'mailto:gordon@clouddevg.io' },
-    { id: 2, tag: SiGooglecloud, text: 'GCP Directory', link: 'https://bit.ly/3VEVuat' },
+    { id: 2, tag: SiGooglecloud, text: 'GCP Directory', link: 'https://bit.ly/cdgGCPDIR' },
   ];
 
   return (
