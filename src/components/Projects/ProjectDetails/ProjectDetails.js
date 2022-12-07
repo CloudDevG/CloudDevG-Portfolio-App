@@ -56,8 +56,8 @@ function ProjectDetails({ modalClose, handleClose, project_name }) {
         <div className="right_container">
           <h1 className="heading">{detailedProjectData.name}</h1>
           <div className="tech_icon_container">
-          {techProjectData.technologies_used.map((tech) => {
-            return <div>{GetTechnologyIcon(tech)}</div>
+          {techProjectData.technologies_used.map((tech, i) => {
+            return <div key={i}>{GetTechnologyIcon(tech)}</div>
           })}
           </div>
           <p className="description">{description}</p>

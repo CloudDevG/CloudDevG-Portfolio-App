@@ -46,8 +46,8 @@ function Projects() {
               <img className="project_image" src={project.image} alt="Project"/>
               <span className="project_description">{project.name}</span>
               <div className="technologies_used_container">
-                {project.technologies_used.map((technology) => {
-                  return <span className="technologies_used">
+                {project.technologies_used.map((technology, i) => {
+                  return <span key={i} className="technologies_used">
                     {GetTechnologyIcon(technology)}{" "}{technology}</span>
                 })}
               </div>

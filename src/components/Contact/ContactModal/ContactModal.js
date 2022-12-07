@@ -5,7 +5,7 @@ import './ContactModal.css';
 
 function ContactModal() {
   useEffect(() => {
-    Aos.init({ duration: 1000, offset: 100 })
+    Aos.init({ duration: 1000, offset: 50 })
   }, [])
 
   return (

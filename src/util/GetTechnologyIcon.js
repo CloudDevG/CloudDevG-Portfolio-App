@@ -22,7 +22,8 @@ import {
   SiVimeo,
   SiYoutube,
   SiSwiper,
-  SiNginx } from 'react-icons/si';
+  SiNginx 
+} from 'react-icons/si';
 import { ImCheckmark } from 'react-icons/im';
 
 const useStyles = makeStyles((theme) =>

@@ -3,8 +3,8 @@ import cloudDevGNavBar from '../assets/imgs/clouddevg/clouddevg-navbar.png';
 import cloudDevGProjects from '../assets/imgs/clouddevg/clouddevg-projects.png';
 import cloudDevGProjectDetail from '../assets/imgs/clouddevg/clouddevg-projectdetail.png';
 import cloudDevGContact from '../assets/imgs/clouddevg/clouddevg-contact.png';
-
 import itaDashHome from '../assets/imgs/ita/ita-dashboard-home.png';
+import itaPostmanExample from '../assets/imgs/ita/ita-postman-example.png';
 import itaLogin from '../assets/imgs/ita/ita-login.png';
 import itaSignup from '../assets/imgs/ita/ita-signup.png';
 import itaDashPilot from '../assets/imgs/ita/ita-dashboard-pilot.png';
@@ -81,7 +81,7 @@ export const project_detail = [
         name: 'Intergalactic Travel Agency',
         description: 'A fictional RESTful web-service that allows "Users" to sign up for an account and complete a variety of requests to look up + book Flights on lengendary Spacecraft aboard with their favorite sci-fi heros as their pilots through the RESTful web service. "Pilot" users are able to add Spacecraft to their fleet and specify route/"Flights" for "Users" to book interstellar passage on.',
         code_url: 'https://github.com/CloudDevG/Intergalactic-Travel-Agency',
-        screenshots: [itaDashHome, itaLogin, itaSignup, itaDashPilot, itaDashSpacecraft, itaDashFlights, itaDashProfile]
+        screenshots: [itaDashHome, itaPostmanExample, itaLogin, itaSignup, itaDashPilot, itaDashSpacecraft, itaDashFlights, itaDashProfile]
         
     },
     {
@@ -95,8 +95,8 @@ export const project_detail = [
     {
         id: 3,
         name: 'CloudDevG.io',
-        description: 'My personal portfolio S.P.A. application that you are currently visiting featuring a built-in Framer-Motion, functional contact form via Email.js, and more.',
-        website_url: 'http://clouddevg.io',
+        description: 'My personal portfolio S.P.A. application that you are currently visiting featuring Framer-Motion, functional contact form via Email.js, and more.',
+        website_url: 'https://clouddevg.io',
         code_url: 'https://github.com/CloudDevG/CloudDevG-Portfolio-App',
         screenshots: [cloudDevGHome, cloudDevGNavBar, cloudDevGProjects, cloudDevGProjectDetail, cloudDevGContact]
     },

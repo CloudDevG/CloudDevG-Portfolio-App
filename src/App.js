@@ -35,7 +35,6 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    // }, 10000)
     }, 1575)
 
     window.addEventListener('scroll', onScroll)
