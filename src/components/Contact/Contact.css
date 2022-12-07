@@ -5,7 +5,7 @@
     /* margin-bottom: 4rem; */
     gap: 1rem;
     border-bottom: 1px solid #333;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
   .first-contact-title{
     /* font-size: 3.5rem;
@@ -59,7 +59,7 @@
     color: white;
     font-weight: 600;
     border: none;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     background-color: #3F76F8;
     border-radius: 8%;
   }

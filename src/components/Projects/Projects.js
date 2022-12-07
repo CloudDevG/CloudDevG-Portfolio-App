@@ -46,7 +46,7 @@ function Projects() {
   return (
     <div className="work" onClick={close}>
       <motion.div
-        className="home_top_container"
+        className="project_top_container"
         variants={FadeIn('down')}
         initial="hidden"
         animate="visible"
