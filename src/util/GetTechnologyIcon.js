@@ -2,7 +2,7 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { RiDeviceLine } from 'react-icons/ri';
 import { IoCodeSlashSharp} from 'react-icons/io5';
 import { GrMysql } from 'react-icons/gr';
-import { MdApi, MdEmail, MdAlternateEmail, MdOutlineRestorePage} from 'react-icons/md';
+import { MdApi, MdEmail, MdAlternateEmail} from 'react-icons/md';
 import { 
   SiJava, 
   SiApachemaven,
