@@ -92,7 +92,6 @@ body{
     border-top: 6px solid #c49514;
     background-color: #3F76F8;
 }
-
 .work_with_me{
     font-size: 1.2rem;
     position: absolute;
@@ -103,7 +102,6 @@ body{
     transform: rotate(-90deg);
     padding-left: 1rem;
     text-decoration: none;
-
 }
 .navbar_dropdown{
     position: fixed;
@@ -121,7 +119,6 @@ body{
     height: 102vh;
     z-index: 1;
     flex-wrap: wrap;
-
 }
 .links_outer{
     display: flex;
@@ -144,7 +141,6 @@ body{
     color: #303030;
     transition: all 0.3s;
 }
-
 .navbar_dropdown div span, .navbar_dropdown div li{
     text-decoration: none;
     color: white;
@@ -165,6 +161,7 @@ body{
         width: 100vw;
         border-top: 1px solid #303030;
         border-bottom: 1px solid #303030;
+        border-left: transparent;
         z-index: 2;
     }
     .navbar_first_section{
@@ -200,7 +197,7 @@ body{
         height: 100vh;
         z-index: 100000;
     }
-  }
+}
 @media only screen and (max-width: 700px){
     .navbar_dropdown{
         flex-direction: column;

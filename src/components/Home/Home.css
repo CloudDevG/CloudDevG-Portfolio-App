@@ -11,7 +11,6 @@
 .first_name{
     font-size: 4rem;
     font-weight: 600;
-    /* color: #dbae3b; */
     color: #c49514;
 }
 .last_name{
@@ -36,7 +35,6 @@
 }
 .typing_text{
     color: #3F76F8;
-    /* color: #c1922d; */
     font-family: 'Urbanist', 'sans-serif';
 }
 @media only screen and (max-width: 1200px){
@@ -58,7 +56,6 @@
         flex-basis: 10%;
     }
 }
-
 @media only screen and (max-width: 700px){
     .home_top_container{
         margin-top: 7.5rem;
@@ -68,7 +65,6 @@
         line-height: normal;
     }
 }
-
 @media only screen and (max-width: 450px){
     .home_text_left{
         font-size: 2.2rem;

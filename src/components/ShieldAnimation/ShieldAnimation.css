@@ -1,17 +1,17 @@
 .animation-logo {
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+circle,
+rect,
+line {
+  stroke-width: 12px;
+  fill: transparent;
+}
+@media only screen and (max-width: 500px) {
+  .animation-logo {
+    left: 54%;
   }
-  circle,
-  rect,
-  line {
-    stroke-width: 12px;
-    fill: transparent;
-  }
-  @media only screen and (max-width: 500px) {
-    .animation-logo {
-      left: 54%;
-    }
-  }  
+}  

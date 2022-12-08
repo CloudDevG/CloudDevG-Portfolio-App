@@ -1,19 +1,19 @@
 .project_top_container {
     margin-top: 1.5rem;
 }
-.work{
+.work {
     margin-top: .5rem;
     margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.button_container{
+.button_container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
-.work_button{
+.work_button {
     background-color: transparent;
     color: white;
     border-radius: 23px;
@@ -22,25 +22,25 @@
     border: 1px solid #3F76F8;
     padding: 0.77rem 2rem;
 }
-.work_button:hover{
+.work_button:hover {
     transition: all 0.4s;
     background-color: #c49514;
     border: 1px solid #c49514;
     color: black;
 }
-.work_button:not(:hover){
+.work_button:not(:hover) {
     transition: all 0.4s;
     background-color: transparent;
     border: 1px solid #3F76F8;
     color: white;
 }
-.project_container{
+.project_container {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5rem;
 }
-.project{
+.project {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -48,28 +48,28 @@
 .project > * {
     margin: 0rem 0rem;
 }
-.project_image{
+.project_image {
     width: 100%;
     height: 100%;
     border-radius: 2%;
     transition: all 0.3s;
     border: 2px solid #c49514;
 }
-.project_image:hover{
+.project_image:hover {
     transform: scale(1.04);
 }
-.project_description{
+.project_description {
     margin: 2rem 0rem;
     line-height: 2.4rem;
     width: 100%;
     font-size: 2rem;
 }
-.technologies_used_container{
+.technologies_used_container {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
 }
-.technologies_used{
+.technologies_used {
     background-color: #3F76F8;
     color: white;
     margin: 0rem 0.3rem;
@@ -79,76 +79,71 @@
     min-width: max-content;
     font-size: 12.5px;
 }
-.technologies_used:hover{
+.technologies_used:hover {
     background-color: #c49514;
     border: 1px solid #c49514;
     color: black;
 }
-.technologies_used:not(:hover){
+.technologies_used:not(:hover) {
     background-color: #3F76F8;
     border: 1px solid #3F76F8;
     color: white;
 }
-.first_title{
+.first_title {
     font-size: 4rem;
     font-weight: 600;
     /* color: #dbae3b; */
     color: #c49514;
 }
-.second_title{
+.second_title {
     color: #3F76F8;
 }
-@media only screen and (max-width: 1500px){
-    .project_description{
+@media only screen and (max-width: 1500px) {
+    .project_description {
         width: 100%;
-        /* font-size: 1.4rem; */
     }
-    .technologies_used_container{
+    .technologies_used_container {
         font-size: 1rem;
     }
-    .project_image{
+    .project_image {
         width: 95%;
         height: 95%;
     }
 }
-@media only screen and (max-width: 1175px){
-    .work{
+@media only screen and (max-width: 1175px) {
+    .work {
         margin-top: 5rem;
     }
-    .project_container{
+    .project_container {
         width: 100%;
     }
 }
-@media only screen and (max-width: 980px){
-    .project_container{
+@media only screen and (max-width: 980px) {
+    .project_container {
         grid-template-columns: 1fr;
     }
-    /* .project_description{
-        font-size: 1.1rem;
-        margin: 1.1rem 0rem;
-    } */
-    .technologies_used{
+    .technologies_used {
         font-size: 0.8rem;
     }
 }
 @media only screen and (max-width: 770px) {
-    .first_title{
+    .first_title {
         font-size: 3.5rem;
     }
   }
-@media only screen and (max-width: 500px){
-    .first_title{
+@media only screen and (max-width: 500px) {
+    .first_title {
         font-size: 3.25rem;;
     }
-    .button_container{
+    .button_container {
         flex-direction: column;
         gap: 1rem;
     }
-    .project_description{
+    .project_description {
         font-size: 1.75rem;
         margin: 1.4rem 0rem;
     }
-    .technologies_used{
+    .technologies_used {
         font-size: 0.8rem;
     }
 }
