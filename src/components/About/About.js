@@ -38,8 +38,9 @@ function About() {
               <p>{about.line_two}<span><a className="about_link" href="https://www.linkedin.com/in/clouddevg/" target="_blank" rel='noreferrer'>{about.line_three}</a></span>{about.line_four} {about.line_five}</p>
               <p>{about.line_six}</p>
               <p>{about.line_seven}</p>
-              <p>{about.line_eight}<span><Link className="about_link" to="/projects">{about.line_nine}</Link></span>{about.line_ten}</p>
-              <p>{about.line_eleven}</p>
+              <p>{about.line_eight}</p>
+              <p>{about.line_nine}<span><Link className="about_link" to="/projects">{about.line_ten}</Link></span>{about.line_eleven}</p>
+              <p>{about.line_twelve}</p>
             </div>
       )
       })}
