@@ -2,15 +2,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 1.6rem;
-    /* margin-bottom: 4rem; */
-    gap: 1rem;
     border-bottom: 1px solid #333;
     padding-bottom: 2rem;
   }
   .first-contact-title{
-    /* font-size: 3.5rem;
-    font-weight: 600; */
-    /* color: #dbae3b; */
     color: #c49514;
 }
 .second-contact-title{
