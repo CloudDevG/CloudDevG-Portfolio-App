@@ -27,7 +27,7 @@
     padding: 2rem 3rem;
   }
   .mail_container {
-    border-left: 0.5px solid #3F76F8;
+    border-left: 2px solid #3F76F8;
     flex: 1;
   }
   .mail {
@@ -37,10 +37,10 @@
   .gmailbuttoncontainer:hover {
     transition: all 0.3s;
     color: black;
-    border: 0.5px solid rgba(0, 0, 0, 0.5)
+    border: 2px solid rgba(0, 0, 0, 0.5)
   }
   .gmailbuttoncontainer:hover .mail_container {
-    border-left: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-left: 2px solid rgba(0, 0, 0, 0.5);
   }
 
   .gmailbuttoncontainer:hover .mail_icon {
