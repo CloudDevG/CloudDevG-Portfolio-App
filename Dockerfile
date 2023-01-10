@@ -1,10 +1,10 @@
-FROM node:19.0-alpine3.16 as react-build
+FROM node:19.4-alpine3.16 as react-build
 WORKDIR /app
 COPY . .
 RUN npm i --legacy-peer-deps
 RUN npm run build
 
-FROM nginx:1.23.2-alpine as production
+FROM nginx:1.23.3-alpine as production
 COPY nginx.conf /etc/nginx/conf.d/configfile.template
 COPY --from=react-build /app/build /usr/share/nginx/html
 ENV PORT 8080
